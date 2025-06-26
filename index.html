@@ -1,400 +1,181 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
 
-/* FONTS E CORES */
-body {
-    font-family: 'Lato', sans-serif;
-    background-color: #261506;
-    color: #f5f5f5;
-    line-height: 1.6;
-}
-
-h1,
-h2,
-h3 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    color: #f7c243;
-}
-
-a {
-    text-decoration: none;
-    color: #f7c243;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #fff;
-}
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f7f7f7;
-      color: #333;
-    }
-
-    header,
-    footer {
-      background-color: #004d00;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    nav {
-      text-align: center;
-      background-color: #e6e6e6;
-      padding: 10px;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #004d00;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 30px;
-      max-width: 800px;
-      margin: auto;
-      background-color: white;
-      margin-top: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    h1,
-    h2 {
-      color: #004d00;
-    }
-
-    .social a {
-      display: inline-block;
-      margin: 10px;
-      text-decoration: none;
-      color: #004d00;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    label,
-    input,
-    textarea {
-      margin-bottom: 10px;
-      font-size: 1rem;
-    }
-
-    input,
-    textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    button {
-      background-color: #004d00;
-      color: white;
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #006600;
-    }
-
-    .whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Imagens/logo.ico" type="image/png" />
+  <title>Jean Eliel Medinger - Leiloeiro Rural Oficial</title>
+  <style>
+    .container-parallax1,
+    .container-parallax2,
+    .container-parallax3,
+    .container-parallax4,
+    .container-parallax5,
+    .container-parallax6 {
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 30px;
-      text-decoration: none;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
     }
 
-    .agendar-link {
-      display: inline-block;
-      margin-top: 15px;
-      background-color: #004d00;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
+    .container-parallax1 {
+      background-image: url('images/fundo1.png');
     }
 
-    .agendar-link:hover {
-      background-color: #006600;
+    .container-parallax2 {
+      background-image: url('images/fundo2.png');
     }
 
-/* TOPO */
-.container-topo {
-    background-color: #261506;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #f7c243;
-}
+    .container-parallax3 {
+      background-image: url('images/martelo.png');
+    }
 
-.container-topo img {
-    height: 9em;
-}
+    .container-parallax4 {
+      background-image: url('images/jean_microfone.png');
+      flex-direction: column;
+      padding: 6rem;
+    }
 
-.container-topo div a {
-    margin-left: 1.5rem;
-    font-weight: bold;
-}
+    .container-parallax5 {
+      background-image: url('images/fundojean1.jpg');
+      flex-direction: column;
+      padding: 2rem;
+    }
 
-#toggle-theme {
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    background-color: #f7c243;
-    color: #261506;
-    border: none;
-    border-radius: 15px;
-    transition: background-color 0.3s ease;
-    font-size: 0.1rem;
-}
+    .container-parallax6 {
+      background-image: url('images/fundogean2.png');
+    }
 
+    .container-parallax1 h1,
+    .container-parallax1 h2,
+    .container-parallax2 h3,
+    .container-parallax3 h3,
+    .container-parallax4 h3,
+    .container-parallax5 h3,
+    .container-parallax6 h3 {
+      font-size: 2rem;
+      color: #e6e6e6;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  </style>
+</head>
 
-#toggle-theme:hover {
-    background-color: #fff;
-    color: #261506;
-    background-color: #b54800;
-}
+<body>
+  <header>
+    <div class="container-topo">
+      <img src="images/logo.jpg" alt="Jean Leiloeiro Oficial" />
+      <div>
+        <h1>Jean Medinger</h1>
+        <h2>Leiloeiro Rural</h2>
+      </div>
+    </div>
+  </header>
 
-/* BANNER */
-.container-parallax1 {
-    background-image: url('images/fundo1.png');
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-}
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#contato">Contato</a>
+  </nav>
 
-.container-parallax1 h1 {
-    font-size: 4rem;
-    letter-spacing: 4px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.842);
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    border-radius: 60px;
-}
+  <div id="banner" class="container-parallax1">
+    <div>
+      <h1>Jean Medinger</h1>
+    </div>
+  </div>
 
-.container-parallax1 h2 {
-    font-size: 1.5rem;
-    color: #070707;
-    text-shadow: 2px 3px 4px rgba(233, 217, 3, 0.863);
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou Administrador e Leiloeiro Rural com anos de atuação no setor agropecuário. Minha missão é conduzir leilões com ética, profissionalismo e respeito à tradição do campo.</p>
+    <p>Na vida pública, tive a honra de servir minha comunidade em Glorinha/RS como:</p>
+    <ul>
+      <li>Vice-prefeito eleito (2025–2028)</li>
+      <li>Vereador (2009–2012)</li>
+      <li>Secretário de Obras (2013–2016)</li>
+      <li>Secretário de Agricultura</li>
+    </ul>
+  </section>
 
-}
+  <div class="container-parallax6">
+    <h3>Tradição e confiança no campo.</h3>
+  </div>
 
+  <section id="experiencia">
+    <h2>Minha Experiência com Leilões</h2>
+    <p>Tenho orgulho em oferecer minha voz e minha presença para valorizar cada animal e cada produtor rural. Atuo em leilões presenciais, virtuais e híbridos, sempre com locução clara, envolvente e respeitosa.</p>
+    <p>Minha trajetória inclui parcerias com:</p>
+    <ul>
+      <li>Remates Santa Úrsula</li>
+      <li>Ágape Negócios Rurais</li>
+      <li>Eventos agropecuários em todo o Rio Grande do Sul</li>
+    </ul>
 
+    <div class="container-parallax4">
+      <h3>Locução rural que valoriza o produtor.</h3>
+    </div>
 
-/* TEXTOS */
-.container-texto {
-    padding: 4rem 2rem;
-    max-width: 960px;
-    margin: auto;
-    background-color: #1a1a1a;
-    border-left: 4px solid #f7c243;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
+    <p>Domino a condução de remates com foco total em ritmo, clareza e agilidade. Minha locução destaca as qualidades dos lotes e mantém o público engajado, seja em feiras, pavilhões, currais ou transmissões online.</p>
 
-.container-texto h2 {
-    margin-bottom: 1rem;
-}
+    <p>Tenho ampla vivência com raças e categorias como:</p>
+    <ul>
+      <li>Novilhas, novilhos, vacas prenhes e com cria</li>
+      <li>Terneiros(as), touros, búfalos, Angus, Brangus, Braford</li>
+      <li>Ovinos e bovinos de elite</li>
+    </ul>
+    <p><strong>Se você quer organizar um leilão com excelência, entre em contato e vamos construir juntos um grande evento!</strong></p>
+  </section>
 
-.container-texto p {
-    margin-bottom: 1rem;
+  <div class="container-parallax2">
+    <h3>A força da nossa pecuária.</h3>
+  </div>
 
-}
+  <section id="contato">
+    <h2>Fale Comigo</h2>
+    <p>Preencha o formulário abaixo ou entre em contato diretamente pelas redes sociais:</p>
 
+    <form name="contato" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contato" />
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required />
 
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required />
 
-/* CONTATOS */
-.contato-horario {
-    background-image: url('Imagens/parallax-vinil.png');
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
-    text-align: center;
-    color: #f5f5f5;
-    padding-top: 1.5em;
-}
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
-.contato-horario h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #b18622;
-    font-family: "metal mania", system-ui;
-}
+      <button type="submit">Enviar</button>
+    </form>
 
-.contato-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-    padding-top: 1.5em;
-}
+    <div class="container-parallax3">
+      <h3>Entre em contato agora mesmo!</h3>
+    </div>
 
-.contato-box iframe {
-    width: 100%;
-    max-width: 600px;
-    height: 300px;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.719);;
-}
+    <p>Você também pode agendar um horário comigo diretamente pelo Google Agenda:</p>
+    <a class="agendar-link" href="https://calendar.google.com" target="_blank">Agendar via Google Agenda</a>
 
-.info-contato p {
-    background-color: rgba(0, 0, 0, 0.5);
-    margin: 0.5rem 0;
-    padding: 0.75rem;
-    border-radius: 6px;
-    font-size: 1rem;
-}
+    <div class="social">
+      <a href="https://www.instagram.com/jean_leiloeiro_rural/" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/jean.medinger.7?locale=pt_BR" target="_blank">Facebook</a>
+    </div>
+  </section>
 
-/* HORÁRIOS */
-.lista-horarios {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 500px;
-}
+  <div class="container-parallax5">
+    <h3>Leilões com transparência e credibilidade.</h3>
+  </div>
 
-.lista-horarios li {
-    background-color: #1e1e1e;
-    border-bottom: 1px solid #444;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+  <footer>
+    <p>&copy; 2025 Jean Eliel Medinger - Todos os direitos reservados</p>
+  </footer>
 
-.lista-horarios h3 {
-    margin-bottom: 0.5rem;
-    color: #f7c243;
-}
+  <a class="whatsapp-button" href="https://wa.me/5551" target="_blank" title="Fale comigo no WhatsApp">💬</a>
+</body>
 
-.lista-horarios p,
-.lista-horarios span {
-    font-size: 1rem;
-    color: #ddd;
-}
-
-.texto-marrom {
-    color: #d26c1e;
-    font-weight: bold;
-}
-
-/* RODAPÉ */
-.container-rodape {
-    background-color: #000;
-    color: #999;
-    text-align: center;
-    padding: 2rem;
-    border-top: 2px solid #f7c243;
-    flex-direction: column;
-    padding: 2rem;
-}
-
-.container-rodape span {
-    color: #f7c243;
-}
-
-/* Light Theme */
-:root[data-theme='light'] {
-    --bg: #fff;
-    --text: #222;
-    --accent: #b54800;
-    --shadow: rgba(0, 0, 0, 0.1);
-}
-
-:root[data-theme='dark'] {
-    --bg: #080808;
-    --text: #fff;
-    --accent: #f7c243;
-    --shadow: rgba(0, 0, 0, 0.5);
-}
-
-body {
-    background-color: var(--bg);
-    color: var(--text);
-}
-
-.container-topo,
-.container-texto,
-.container-rodape,
-.lista li {
-    background-color: var(--bg);
-    color: var(--text);
-    box-shadow: 0 2px 4px var(--shadow);
-}
-
-
-h2,
-h3,
-a,
-strong,
-span {
-    color: var(--accent);
-}
-
-p {
-    color: var(--text);
-}
-
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.galeria div {
-    background-color: #1e1e1e;
-    padding: 1rem;
-    text-align: center;
-    border: 1px solid var(--accent);
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.galeria div:hover {
-    transform: scale(1.05);
-    background-color: #2c2c2c;
-}
-
-.galeria img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
-}
+</html>
