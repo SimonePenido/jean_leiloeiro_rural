@@ -31,6 +31,119 @@ a:hover {
     color: #fff;
 }
 
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    header,
+    footer {
+      background-color: #004d00;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #e6e6e6;
+      padding: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #004d00;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1,
+    h2 {
+      color: #004d00;
+    }
+
+    .social a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      color: #004d00;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label,
+    input,
+    textarea {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    input,
+    textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #004d00;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #006600;
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .agendar-link {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #004d00;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .agendar-link:hover {
+      background-color: #006600;
+    }
+
 /* TOPO */
 .container-topo {
     background-color: #261506;
@@ -89,8 +202,7 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.842);
     padding: 1rem 2rem;
     border-radius: 8px;
-    font-family: "Metal Mania", system-ui;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 1px;
     border-radius: 60px;
 }
@@ -124,60 +236,7 @@ a:hover {
 
 }
 
-/* PARALLAX */
-.container-parallax2,
-.container-parallax3,
-.container-parallax4,
-.container-parallax5 {
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
-.container-parallax2 {
-    background-image: url('images/logo2fundo.jpg');
-    height: 60vh;
-}
-
-.container-parallax3 {
-    background-image: url('images/fundogado.png');
-}
-
-.container-parallax4 {
-    background-image: url('images/fundojean2.png');
-    flex-direction: column;
-    padding: 2rem;
-}
-
-.container-parallax5 {
-    background-image: url('images/fundojean1.jpg');
-    flex-direction: column;
-    padding: 2rem;
-}
-
-.container-parallax6 {
-    background-image: url('images/fundo2.png');
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-parallax2 h3,
-.container-parallax3 h3,
-.container-parallax4 h3,
-.container-parallax5 h3 {
-    font-size: 2rem;
-    color: #f7c243;
-    background-color: rgba(0, 0, 0, 0.719);;
-    padding: 1rem;
-    border-radius: 8px;
-}
 
 /* CONTATOS */
 .contato-horario {
