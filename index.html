@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="images/logo.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="script.js">
   <title>Jean Eliel Medinger - Leiloeiro Rural Oficial</title>
 </head>
 
@@ -86,7 +85,9 @@
     <h2>Fale Comigo</h2>
     <p>Preencha o formulário abaixo ou entre em contato diretamente pelas redes sociais:</p>
 
-    <form id="contato-form">
+    <form id="contato-form" name="contato" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contato" />
+      
       <label for="nome">Nome</label>
       <input type="text" id="nome" name="nome" required />
 
@@ -99,6 +100,13 @@
       <button type="submit">Enviar</button>
     </form>
 
+    <script>
+      document.getElementById('contato-form').addEventListener('submit', function (event) {
+        alert('Mensagem enviada com sucesso!');
+      });
+    </script>
+  </section>
+
     <div class="container-parallax3">
       <h3>Entre em contato agora mesmo!</h3>
     </div>
@@ -106,6 +114,7 @@
     <div class="social">
       <a href="https://www.instagram.com/jean_leiloeiro_rural/" target="_blank">Instagram</a>
       <a href="https://www.facebook.com/jean.medinger.7?locale=pt_BR" target="_blank">Facebook</a>
+      <a href="mailto:jeanmedinger@hotmail.com">Email: jeanmedinger@hotmail.com</a>
     </div>
   </section>
 
