@@ -18,12 +18,10 @@ h2,
 h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    color: #f7c243;
 }
 
 a {
     text-decoration: none;
-    color: #f7c243;
     transition: color 0.3s ease;
 }
 
@@ -31,118 +29,104 @@ a:hover {
     color: #fff;
 }
 
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f7f7f7;
-      color: #333;
-    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
 
-    header,
-    footer {
-      background-color: #004d00;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
+header,
+footer {
+    background-color: #004d00;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
-    nav {
-      text-align: center;
-      background-color: #e6e6e6;
-      padding: 10px;
-    }
+nav {
+    text-align: center;
+    background-color: #e6e6e6;
+    padding: 10px;
+}
 
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #004d00;
-      font-weight: bold;
-    }
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #004d00;
+    font-weight: bold;
+}
 
-    section {
-      padding: 30px;
-      max-width: 800px;
-      margin: auto;
-      background-color: white;
-      margin-top: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+section {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    h1,
-    h2 {
-      color: #004d00;
-    }
+h1,
+h2 {
+    color: #004d00;
+}
 
-    .social a {
-      display: inline-block;
-      margin: 10px;
-      text-decoration: none;
-      color: #004d00;
-    }
+.social a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    color: #004d00;
+}
 
-    form {
-      display: flex;
-      flex-direction: column;
-    }
+form {
+    display: flex;
+    flex-direction: column;
+}
 
-    label,
-    input,
-    textarea {
-      margin-bottom: 10px;
-      font-size: 1rem;
-    }
+label,
+input,
+textarea {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
 
-    input,
-    textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
-    button {
-      background-color: #004d00;
-      color: white;
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+button {
+    background-color: #004d00;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-    button:hover {
-      background-color: #006600;
-    }
+button:hover {
+    background-color: #006600;
+}
 
-    .whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 30px;
-      text-decoration: none;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .agendar-link {
-      display: inline-block;
-      margin-top: 15px;
-      background-color: #004d00;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    .agendar-link:hover {
-      background-color: #006600;
-    }
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 
 /* TOPO */
 .container-topo {
@@ -156,6 +140,7 @@ a:hover {
 
 .container-topo img {
     height: 9em;
+    border-radius: 15px;
 }
 
 .container-topo div a {
@@ -214,8 +199,6 @@ a:hover {
 
 }
 
-
-
 /* TEXTOS */
 .container-texto {
     padding: 4rem 2rem;
@@ -233,10 +216,72 @@ a:hover {
 
 .container-texto p {
     margin-bottom: 1rem;
-
 }
 
+.container-parallax1,
+.container-parallax2,
+.container-parallax3,
+.container-parallax4,
+.container-parallax5,
+.container-parallax6 {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1em;
+}
 
+.container-parallax1 {
+    background-image: url('images/jeaninicio.jpg');
+}
+
+.container-parallax2 {
+    background-image: url('images/fundo2.png');
+}
+
+.container-parallax3 {
+    background-image: url('images/martelo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-direction: column;
+}
+
+.container-parallax4 {
+    background-image: url('images/jean_microfone.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-direction: column;
+}
+
+.container-parallax5 {
+    background-image: url('images/vacas.jpg');
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.container-parallax6 {
+    background-image: url('images/fundogean2.png');
+}
+
+.container-parallax1 h1,
+.container-parallax1 h2,
+.container-parallax2 h3,
+.container-parallax3 h3,
+.container-parallax4 h3,
+.container-parallax5 h3,
+.container-parallax6 h3 {
+    font-size: 2rem;
+    color: #e6e6e6;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 8px;
+}
 
 /* CONTATOS */
 .contato-horario {
@@ -252,8 +297,8 @@ a:hover {
 .contato-horario h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
     color: #b18622;
-    font-family: "metal mania", system-ui;
 }
 
 .contato-box {
@@ -271,13 +316,14 @@ a:hover {
     height: 300px;
     border: none;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.719);;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.719);
+    ;
 }
 
 .info-contato p {
     background-color: rgba(0, 0, 0, 0.5);
-    margin: 0.5rem 0;
-    padding: 0.75rem;
+    margin-top: 0.7rem;
+    padding: 1rem;
     border-radius: 6px;
     font-size: 1rem;
 }

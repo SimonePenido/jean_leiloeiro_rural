@@ -5,67 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="Imagens/logo.ico" type="image/png" />
+  <link rel="icon" href="images/logo.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="script.js">
   <title>Jean Eliel Medinger - Leiloeiro Rural Oficial</title>
-  <style>
-    .container-parallax1,
-    .container-parallax2,
-    .container-parallax3,
-    .container-parallax4,
-    .container-parallax5,
-    .container-parallax6 {
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-      height: 60vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    .container-parallax1 {
-      background-image: url('images/fundo1.png');
-    }
-
-    .container-parallax2 {
-      background-image: url('images/fundo2.png');
-    }
-
-    .container-parallax3 {
-      background-image: url('images/martelo.png');
-    }
-
-    .container-parallax4 {
-      background-image: url('images/jean_microfone.png');
-      flex-direction: column;
-      padding: 6rem;
-    }
-
-    .container-parallax5 {
-      background-image: url('images/fundojean1.jpg');
-      flex-direction: column;
-      padding: 2rem;
-    }
-
-    .container-parallax6 {
-      background-image: url('images/fundogean2.png');
-    }
-
-    .container-parallax1 h1,
-    .container-parallax1 h2,
-    .container-parallax2 h3,
-    .container-parallax3 h3,
-    .container-parallax4 h3,
-    .container-parallax5 h3,
-    .container-parallax6 h3 {
-      font-size: 2rem;
-      color: #e6e6e6;
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 1rem;
-      border-radius: 8px;
-    }
-  </style>
 </head>
 
 <body>
@@ -91,10 +33,11 @@
     </div>
   </div>
 
-  <section id="sobre">
+  <section id="sobre" class="container-texto">
     <h2>Sobre Mim</h2>
-    <p>Sou Administrador e Leiloeiro Rural com anos de atuação no setor agropecuário. Minha missão é conduzir leilões com ética, profissionalismo e respeito à tradição do campo.</p>
-    <p>Na vida pública, tive a honra de servir minha comunidade em Glorinha/RS como:</p>
+    <p>Sou Administrador e Leiloeiro Rural com anos de atuação no setor agropecuário. Minha missão é conduzir leilões
+      com ética, profissionalismo e respeito à tradição do campo.</p>
+    <p>Atuação na vida pública no município de Glorinha:</p>
     <ul>
       <li>Vice-prefeito eleito (2025–2028)</li>
       <li>Vereador (2009–2012)</li>
@@ -107,9 +50,10 @@
     <h3>Tradição e confiança no campo.</h3>
   </div>
 
-  <section id="experiencia">
+  <section id="experiencia" class="container-texto">
     <h2>Minha Experiência com Leilões</h2>
-    <p>Tenho orgulho em oferecer minha voz e minha presença para valorizar cada animal e cada produtor rural. Atuo em leilões presenciais, virtuais e híbridos, sempre com locução clara, envolvente e respeitosa.</p>
+    <p>Tenho orgulho em oferecer minha voz e minha presença para valorizar cada animal e cada produtor rural. Atuo em
+      leilões presenciais, virtuais e híbridos, sempre com locução clara, assertiva e respeitosa.</p>
     <p>Minha trajetória inclui parcerias com:</p>
     <ul>
       <li>Remates Santa Úrsula</li>
@@ -121,7 +65,8 @@
       <h3>Locução rural que valoriza o produtor.</h3>
     </div>
 
-    <p>Domino a condução de remates com foco total em ritmo, clareza e agilidade. Minha locução destaca as qualidades dos lotes e mantém o público engajado, seja em feiras, pavilhões, currais ou transmissões online.</p>
+    <p>Domino a condução de remates com foco total em ritmo, clareza e agilidade. Minha locução destaca as qualidades
+      dos lotes e mantém o público engajado, seja em feiras, pavilhões, currais ou transmissões online.</p>
 
     <p>Tenho ampla vivência com raças e categorias como:</p>
     <ul>
@@ -129,19 +74,19 @@
       <li>Terneiros(as), touros, búfalos, Angus, Brangus, Braford</li>
       <li>Ovinos e bovinos de elite</li>
     </ul>
-    <p><strong>Se você quer organizar um leilão com excelência, entre em contato e vamos construir juntos um grande evento!</strong></p>
+    <p><strong>Se você quer organizar um leilão com excelência, entre em contato e vamos construir juntos um grande
+        evento!</strong></p>
   </section>
 
   <div class="container-parallax2">
     <h3>A força da nossa pecuária.</h3>
   </div>
 
-  <section id="contato">
+  <section id="contato" class="container-texto">
     <h2>Fale Comigo</h2>
     <p>Preencha o formulário abaixo ou entre em contato diretamente pelas redes sociais:</p>
 
-    <form name="contato" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="contato" />
+    <form id="contato-form">
       <label for="nome">Nome</label>
       <input type="text" id="nome" name="nome" required />
 
@@ -158,9 +103,6 @@
       <h3>Entre em contato agora mesmo!</h3>
     </div>
 
-    <p>Você também pode agendar um horário comigo diretamente pelo Google Agenda:</p>
-    <a class="agendar-link" href="https://calendar.google.com" target="_blank">Agendar via Google Agenda</a>
-
     <div class="social">
       <a href="https://www.instagram.com/jean_leiloeiro_rural/" target="_blank">Instagram</a>
       <a href="https://www.facebook.com/jean.medinger.7?locale=pt_BR" target="_blank">Facebook</a>
@@ -168,14 +110,14 @@
   </section>
 
   <div class="container-parallax5">
-    <h3>Leilões com transparência e credibilidade.</h3>
+    <h3>Leilões Rurais com transparência e credibilidade.</h3>
   </div>
 
   <footer>
-    <p>&copy; 2025 Jean Eliel Medinger - Todos os direitos reservados</p>
+    <p>&copy; <script>document.write(new Date().getFullYear());</script> Jean Eliel Medinger - Todos os direitos reservados.</p>
   </footer>
 
-  <a class="whatsapp-button" href="https://wa.me/5551" target="_blank" title="Fale comigo no WhatsApp">💬</a>
+  <a class="whatsapp-button" href="https://wa.me/5551996495607" target="_blank" title="Fale comigo no WhatsApp">💬</a>
 </body>
 
 </html>
