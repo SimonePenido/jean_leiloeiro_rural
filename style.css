@@ -70,7 +70,7 @@ a:hover {
 
 /* BANNER */
 .container-parallax1 {
-    background-image: url('Imagens/banner.png');
+    background-image: url('images/fundo1.png');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -140,28 +140,28 @@ a:hover {
 }
 
 .container-parallax2 {
-    background-image: url('Imagens/parallax-fachada.png');
+    background-image: url('images/logo2fundo.jpg');
     height: 60vh;
 }
 
 .container-parallax3 {
-    background-image: url('Imagens/parallax-vinil-xicara.jpg');
+    background-image: url('images/fundogado.png');
 }
 
 .container-parallax4 {
-    background-image: url('Imagens/parallax-cartola.png');
+    background-image: url('images/fundojean2.png');
     flex-direction: column;
     padding: 2rem;
 }
 
 .container-parallax5 {
-    background-image: url('Imagens/parallax-guitarra.png');
+    background-image: url('images/fundojean1.jpg');
     flex-direction: column;
     padding: 2rem;
 }
 
 .container-parallax6 {
-    background-image: url('Imagens/parallax-cafe.jpg');
+    background-image: url('images/fundo2.png');
     height: 15vh;
     display: flex;
     justify-content: center;
