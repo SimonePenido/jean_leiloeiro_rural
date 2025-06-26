@@ -130,7 +130,7 @@ button:hover {
 
 /* TOPO */
 .container-topo {
-    background-color: #261506;
+
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -328,38 +328,37 @@ button:hover {
     font-size: 1rem;
 }
 
-/* HORÁRIOS */
-.lista-horarios {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 500px;
-}
-
-.lista-horarios li {
-    background-color: #1e1e1e;
-    border-bottom: 1px solid #444;
-    padding: 1rem;
+.social {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0 1rem 0;
 }
 
-.lista-horarios h3 {
-    margin-bottom: 0.5rem;
-    color: #f7c243;
+.social-button {
+    background: #f7c243;
+
+    padding: 0.6em 1.2em;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.lista-horarios p,
-.lista-horarios span {
-    font-size: 1rem;
-    color: #ddd;
+.social-button:hover {
+    background: #4caf50;
+
+    box-shadow: 0 4px 16px rgba(76, 175, 80, 0.15);
 }
 
-.texto-marrom {
-    color: #d26c1e;
-    font-weight: bold;
+@media (max-width: 600px) {
+    .social {
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
 
 /* RODAPÉ */
 .container-rodape {
@@ -376,12 +375,18 @@ button:hover {
     color: #f7c243;
 }
 
+.container-rodape a {
+    color: #f7c243;
+    text-decoration: none;
+}
+
 /* Light Theme */
 :root[data-theme='light'] {
     --bg: #fff;
     --text: #222;
-    --accent: #b54800;
+    --accent: #004d00;
     --shadow: rgba(0, 0, 0, 0.1);
+        --link: #f7c243;
 }
 
 :root[data-theme='dark'] {
@@ -389,6 +394,7 @@ button:hover {
     --text: #fff;
     --accent: #f7c243;
     --shadow: rgba(0, 0, 0, 0.5);
+    --link: #f7c243;
 }
 
 body {
@@ -405,6 +411,18 @@ body {
     box-shadow: 0 2px 4px var(--shadow);
 }
 
+.container-rodape p {
+    color: #fff;
+}
+
+.linkfooter {
+    color: var(--link);
+    text-decoration: none;
+}
+
+.linkfooter:hover {
+    color: var(--accent);
+}
 
 h2,
 h3,

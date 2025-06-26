@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="light">
 
 <head>
   <meta charset="UTF-8" />
@@ -21,9 +21,11 @@
   </header>
 
   <nav>
+    
     <a href="#sobre">Sobre</a>
     <a href="#experiencia">Experiência</a>
     <a href="#contato">Contato</a>
+    <button id="toggle-theme"><img src="images/moon-solid.svg" alt="Clique">Mode</button>
   </nav>
 
   <div id="banner" class="container-parallax1">
@@ -112,10 +114,13 @@
     </div>
 
     <div class="social">
-      <a href="https://www.instagram.com/jean_leiloeiro_rural/" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com/jean.medinger.7?locale=pt_BR" target="_blank">Facebook</a>
-      <a href="mailto:jeanmedinger@hotmail.com">Email: jeanmedinger@hotmail.com</a>
+      <a href="https://www.instagram.com/jean_leiloeiro_rural/" target="_blank" class="social-button">Instagram</a>
+      <a href="https://www.facebook.com/jean.medinger.7?locale=pt_BR" target="_blank" class="social-button">Facebook</a>
+      <a href="mailto:jeanmedinger@hotmail.com" class="social-button">Email: jeanmedinger@hotmail.com</a>
     </div>
+    <style>
+      
+    </style>
   </section>
 
   <div class="container-parallax5">
@@ -124,9 +129,20 @@
 
   <footer>
     <p>&copy; <script>document.write(new Date().getFullYear());</script> Jean Eliel Medinger - Todos os direitos reservados.</p>
+    <p>Desenvolvido por Simone Penido</p>
+        <a href="#banner">Voltar ao topo</a>
   </footer>
 
   <a class="whatsapp-button" href="https://wa.me/5551996495607" target="_blank" title="Fale comigo no WhatsApp">💬</a>
+  <script>
+    // Modo claro/escuro
+    const toggleTheme = document.getElementById('toggle-theme');
+    toggleTheme.addEventListener('click', () => {
+        const html = document.documentElement;
+        html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    });
+
+</script>
 </body>
 
 </html>
